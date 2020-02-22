@@ -1,0 +1,50 @@
+<div class="body-img-shop">
+    <div class="contenedor">
+      <div id="header">
+        <div id="titulo">
+          La Bodega
+        </div>
+        <div id="menu">
+          <div class="boxmenu">
+            <fa [name]="'th'" style="color: gray;" (click)="OpenCatalog($event)"></fa>
+          </div>
+          <div class="boxmenu">
+            <fa [name]="'shopping-cart'" style="color: gray;"></fa>
+            <span class="badge badge-danger">{{shoppingCartItems.length}}</span>
+          </div>
+          <div class="boxmenu">
+            <fa [name]="'sign-out'" style="color: gray;" (click)="Logout($event)"></fa>
+          </div>
+          <div class="boxmenu">
+  
+          </div>
+        </div>
+      </div>
+      <div id="contenedorCatalogo">
+        <div>
+            <div class="headerCatalogo">
+                <div class="titloCatalogo">Comprar productos</div>
+            </div>
+            <div class="carritoLista">
+                <div class="productoCarrito" *ngFor="let item of shoppingCartItems">
+                    <div class="imgCarrito"><img>
+                        <img [src]="item.product.imagen"/>
+                        <div>Subtotal $ {{item.product.valor*item.amount}}</div>
+                    </div>
+                    <div class="descCarrito">
+                        <div>{{item.product.nombre}}</div>
+                        <div>Unidades: {{item.amount}}</div>
+                    </div>
+                </div>                
+            </div>
+            <div class="totales">
+                <div>Total $ {{total}}</div>
+                <div class="acciones">
+                    <button class="btn btn-danger">Cancelar</button>
+                    <button class="btn btn-primary" (click)="Buy($event)">Pagar</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

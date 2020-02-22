@@ -1,0 +1,11 @@
+<div class="body-img">
+  <div class="login-page">
+      <div class="formulario">
+          <form id="login-form" #lForm="ngForm" [formGroup]="LoginForm" (ngSubmit)="validateUser()" novalidate>
+              <input type="text" placeholder="username" name="username"  formControlName="username">
+              <input type="password" placeholder="password" name="password"  formControlName="password">
+              <input type="submit" class="submit">
+          </form>
+      </div>
+  </div>
+</div>

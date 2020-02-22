@@ -1,0 +1,42 @@
+<div class="body-img-shop">
+    <div class="contenedor">
+      <div id="header">
+        <div id="titulo">
+          La Bodega
+        </div>
+        <div id="menu">
+          <div class="boxmenu">
+            <fa [name]="'th'" style="color: gray;" (click)="OpenCatalog($event)"></fa>
+          </div>
+          <div class="boxmenu">
+            <fa [name]="'shopping-cart'" style="color: gray;"></fa>
+            <span class="badge badge-danger" (click)="OpenCheckout($event)">{{shoppingCartItems.length}}</span>
+          </div>
+          <div class="boxmenu">
+            <fa [name]="'sign-out'" style="color: gray;" (click)="Logout($event)"></fa>
+          </div>
+          <div class="boxmenu">
+  
+          </div>
+        </div>
+      </div>
+      <div id="contenedorCatalogo">
+        <div *ngIf="product !== undefined">
+          <div class="headerCatalogo">
+              <div class="titloCatalogo">{{product.nombre}}</div>
+          </div>
+          <div class="verMas">
+              <div class="imgCarrito">
+                  <img [src]="product.imagen" />
+
+              </div>
+              <div class="verMasDetalle">
+                  Precio: {{product.valor}} <br />
+                  Unidades Disponibles: {{product.unidades}}<br>
+                  <button class="btn btn-warning" (click)="Back($event)">Volver</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

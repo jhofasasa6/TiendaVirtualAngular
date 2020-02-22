@@ -1,0 +1,288 @@
+.body-img-shop {
+    background-image: url("/assets/images/main-fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+  
+  .navbar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+  
+  .contenedor {
+    display: block;
+    width: 85%;
+    height: 100%;
+    margin: auto;
+  }
+  
+  #header {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-radius: 3px;
+  }
+  
+  #titulo {
+    width: 150px;
+    color: gray;
+    font-size: 25px;
+    text-align: left;
+    text-align: center;
+    display: block;
+    height: 100%;
+    float: left;
+  }
+  
+  #menu {
+    display: block;
+    width: 450px;
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .boxmenu {
+    width: 25%;
+    display: block;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  .boxmenu:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  #contenedorCatalogo {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 50px;
+    height: 80%;
+    background-color: white;
+    border-radius: 3px;
+  }
+  
+  .headerCatalogo {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: whitesmoke;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  
+  .titloCatalogo {
+    display: block;
+    width: 49%;
+    height: 80%;
+    float: left;
+    font-size: 35px;
+    color: black;
+    text-align: left;
+    padding-top: 18px;
+    padding-left: 50px;
+  }
+  
+  .busquedaCatalogo {
+    display: block;
+    width: 45%;
+    height: 80%;
+    float: right;
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 30px;
+  }
+  
+  .busquedaCatalogo input[type="text"] {
+    width: 250px;
+    height: 25px;
+  }
+  
+  .contenedorProductos {
+    background-color: whitesmoke;
+    overflow-x: auto;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+  }
+  
+  .productos {
+    width: 23%;
+    height: 420px;
+    border-radius: 10px;
+    margin-left: 27px;
+    margin-top: 15px;
+    background-color: white;
+  }
+  
+  .productos img {
+    padding-top: 15px;
+    width: 80%;
+    height: 60%;
+    border-radius: 10px;
+  }
+  
+  .productos .info {
+    display: block;
+    width: 100%;
+    height: 25px;
+    margin-top: 5px;
+  }
+  
+  .productos .info .nombre {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+  }
+  
+  .productos .info .descripcion {
+    width: 49%;
+    float: left;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+  
+  .productos .info .valor {
+    width: 49%;
+    float: right;
+    color: blue;
+    font-weight: bold;
+  }
+  
+  .acciones {
+    margin-top: 5px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .acciones button {
+    margin-left: 25px;
+  }
+  
+  .acciones input[type="number"] {
+    margin-left: 25px;
+    width: 80px;
+  }
+  
+  .contenedorCarito {
+    display: block;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+  }
+  
+  .carritoLista {
+    display: block;
+    float: left;
+    width: 45%;
+    height: 80%;
+    margin-top: 25px;
+    margin-left: 70px;
+    display: flex;
+    flex-flow: column;
+    overflow-x: auto;
+  }
+  
+  .totales {
+    display: block;
+    float: right;
+    width: 45%;
+    height: 80%;
+    margin-top: 25px;
+    margin-right: 70px;
+  }
+  
+  .productoCarrito {
+    margin-top: 3px;
+    display: block;
+    width: 100%;
+    height: 25%;
+    font-weight: bold;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+  }
+  
+  .imgCarrito {
+    display: block;
+    width: 30%;
+    height: 80%;
+    float: left;
+  }
+  
+  .imgCarrito img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .descCarrito {
+    display: block;
+    width: 70%;
+    height: 80%;
+    float: right;
+  }
+  
+  .verMas{
+    display: block;
+    width: 100%;
+    height: 80%;  
+  }
+  
+  
+  .verMasimagen {
+    display: block;
+    width: 50%;
+    height:80%;
+    float: left;
+    
+    margin-top: 50px;
+  }
+  
+  .verMasimagen img {
+    display: block;
+    width: 100%;
+    height:480px;  
+    border: 1px darkblue solid;
+    border-radius: 5px;
+  }
+  .verMasDetalle {  
+    width: 50%;
+    height: 80%;
+    float: right;
+    font-size: 30px;
+    padding-left: 15px;  
+    margin-top: 50px;
+  }
+  .volver{
+    position: absolute;  
+    width: 100%;
+    height:100%;  
+  }

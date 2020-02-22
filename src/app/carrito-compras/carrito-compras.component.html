@@ -1,0 +1,61 @@
+<div class="body-img-shop">
+  <div class="contenedor">
+    <div id="header">
+      <div id="titulo">
+        La Bodega
+      </div>
+      <div id="menu">
+        <div class="boxmenu">
+          <fa [name]="'th'" style="color: gray;"></fa>
+        </div>
+        <div class="boxmenu">
+          <fa [name]="'shopping-cart'" style="color: gray;" (click)="OpenCheckout($event)"></fa>
+          <span class="badge badge-danger" (click)="OpenCheckout($event)">{{shoppingCartItems.length}}</span>
+        </div>
+        <div class="boxmenu">
+          <fa [name]="'sign-out'" style="color: gray;" (click)="Logout($event)"></fa>
+        </div>
+        <div class="boxmenu">
+
+        </div>
+      </div>
+    </div>
+    <div id="contenedorCatalogo">
+
+      <div>
+        <div class="headerCatalogo">
+          <div class="titloCatalogo">Catalogo Productos</div>
+          <div class="busquedaCatalogo">
+            <div>
+              ¿Que estas buscando?
+            </div>
+            <div>
+              <input type="text" name="producto" placeholder="Buscar producto">
+            </div>
+          </div>
+        </div>
+        <div class="contenedorProductos">
+          <div class="productos" *ngFor="let product of products">
+            <img [src]="product.imagen"/>
+            <div class="info">
+              <div class="nombre">{{product.nombre}}</div>
+            </div>            
+            <div class="info">
+              <div class="descripcion">Precio:</div>
+              <div class="valor">$ {{product.valor}}</div>
+            </div>
+            <div class="info">
+              <div class="descripcion">Unidades Disponibles:</div>
+              <div class="valor">{{product.unidades}}</div>
+            </div>
+            <div class="acciones">
+              <button class="btn btn-primary" (click)="OpenDetalle($event, product.id)" >Ver Mas</button>
+              <button class="btn btn-warning" (click)="Add($event, product)" >Añadir</button>
+              <input type="number" id="p{{product.id}}" />
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
